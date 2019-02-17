@@ -1,8 +1,8 @@
 # S3-backup
 
-Simple bash-script for backupping a directory to a S3 bucket.
+Simple bash-script for backupping a directory to a S3 bucket. Backupping is done with AWS CLI using the sync command. The command updates the bucket content to be the same as the directory content (excluding empty folders). When versioning is enabled from the bucket settings, old versions can be easily recovered.
 
-Instructions (for Ubuntu 16.04):
+## Instructions (for Ubuntu 16.04):
 
 1. Install AWS CLI using python3 virtualenv and pip3
 ```sh
